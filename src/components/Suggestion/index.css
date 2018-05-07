@@ -1,0 +1,49 @@
+.suggestion-header {
+  padding: 4px 10px;
+  background-color: #282828;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .1) 0%, rgba(255, 255, 255, .1) 100%);
+  color: rgba(255, 255, 255, .9);
+}
+
+.suggestion-heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: 'VAGRounded', sans-serif;
+}
+
+.suggestion-figure {
+  position: relative;
+  padding-bottom: 70%;
+  background-color: transparent;
+  /* background-image:  from style attr */
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.suggestion-figure-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.suggestion-figure-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 10px;
+  background-color: rgba(0, 0, 0, .9);
+  color: rgba(255, 255, 255, .9);
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
+}

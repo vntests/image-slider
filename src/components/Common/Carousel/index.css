@@ -1,0 +1,76 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 -10px;
+  padding: 0 10px;
+}
+
+.carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 -5px;
+  transform: translate(0, 0);
+  transition: all .25s linear;
+}
+
+.carousel-item {
+  flex: 1;
+  padding: 0 5px;
+}
+
+.carousel-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-nav-button {
+  position: absolute;
+  top: 50%;
+  display: block;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 100%;
+  padding: 0;
+  background-color: #6e8aca;
+  color: #fff;
+  font: inherit;
+  transform: translateY(-50%);
+}
+
+.carousel-nav-button[disabled] {
+  background-color: #787878;
+}
+
+.carousel-nav-button::before {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.carousel-nav-button-prev {
+  left: 0;
+  /* transform: translateX(-10px) translateY(-50%); */
+}
+
+.carousel-nav-button-prev::before {
+  border-width: 6px 12px 6px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.carousel-nav-button-next {
+  right: 0;
+  /* transform: translateX(10px) translateY(-50%); */
+}
+
+.carousel-nav-button-next::before {
+  border-width: 6px 0 6px 12px;
+  border-color: transparent transparent transparent #fff;
+}
